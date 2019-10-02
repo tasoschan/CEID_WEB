@@ -1,0 +1,157 @@
+body{
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 15px; /* isws to text size na mhn prepei na einai global*/
+    line-height: 1.5; 
+   padding: 0;
+   margin: 0; 
+   background-color: rgb(255, 255, 255); 
+   
+}
+
+
+#button1{
+    width: 300px;
+    height: 40px;
+}
+#button2{
+    width: 300px;
+    height: 40px;
+}
+#wrapper{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+button{
+    background: #FFFEFB;
+    color: #232021;
+    width: 240px;
+    height: 80px;
+    border: 1px solid #232021;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+
+
+}
+
+button:focus{
+    outline: none;
+}
+
+button:before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,.5);
+    width: 60px;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translateX(-130px) skewX(-15deg);
+}
+
+button:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,.2);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(-15deg);
+}
+
+button:hover{
+    background: #DC5F52;
+    cursor: pointer;
+}
+
+button:hover:before{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+
+}
+
+
+button:hover:after{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .1;
+    transition: .7s;
+
+}
+
+.container{ 
+    width:80% ;
+    margin:auto; 
+    overflow: hidden; 
+}
+.collapsible{
+    margin-left: 230px;
+    margin-bottom: 25px;
+}
+.content {
+    display: none;   /*einai krimmeno apo default h anadiplwmenh list*/
+    margin-left: 33px;  
+    list-style-type: disc; 
+}
+
+
+
+header {
+    color: #232021;
+    background: #3CA1B9;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #363C45 3px solid;
+}
+
+header #branding {
+    float: right;
+}
+
+header #branding h1{
+    margin: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
+header .logo {
+    width: 80%;
+    margin: 0;
+}
+
+
+header .logo img {
+    width: 300px;
+    margin: 0;
+    float: left;
+}
+
+
+
+
+
+
+
+footer{
+    color: #ffffff;
+    background-color: #211E22;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 0px;
+}

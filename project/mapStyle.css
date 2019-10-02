@@ -1,0 +1,164 @@
+body{
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 15px; /* isws to text size na mhn prepei na einai global*/
+    line-height: 1.5; 
+   padding: 0;
+   margin: 0; 
+   background-color: FFFEFB; 
+   
+}
+
+.container{ 
+    width:80% ;
+    margin:auto; 
+    overflow: hidden; 
+}
+.collapsible{
+    margin-left: 230px;
+    margin-bottom: 25px;
+}
+.content {
+    display: none;   /*einai krimmeno apo default h anadiplwmenh list*/
+    margin-left: 33px;  
+    list-style-type: disc; 
+}
+
+.content li {
+    list-style-type: disc;
+}
+
+#options button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: rgb(255, 255, 255);
+    font-size: 15px;
+}
+#options button:hover{
+    font-weight: bold;
+}
+
+header {
+    color: #232021;
+    background: #3CA1B9;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #363C45 3px solid;
+}
+
+header #branding {
+    float: right;
+}
+
+header #branding h1{
+    margin: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
+header .logo {
+    width: 80%;
+    margin: 0;
+}
+
+
+
+header .logo img {
+    width: 100px;
+    margin: 0;
+    float: left;
+  }
+  
+  @media only screen and (min-width: 321px){
+    header .logo img {
+      width: 300px;
+      margin: 0;
+      float: left;
+    }
+  }
+
+#WelcomeText {
+    margin-top: 0;
+    color: #000000;
+}
+
+#WelcomeText h1{
+    text-align: center;
+    font-size: 50px;
+    
+}
+
+
+
+#options h2{
+    position: relative;
+    font-size: 45px;
+    margin-left: 175px;
+    margin-top: -150px;
+}
+
+#options h3{
+    font-size: 35px;
+    margin-left: 175px;
+    margin-top: -150px;
+}
+
+
+#options nav {
+    margin-left: 175px;
+}
+
+#options ul{
+   margin-top: -10px;
+   list-style-type: none;
+}
+
+#options a, #logout a {
+    text-decoration: none;
+    color: black;
+}
+
+#options a:hover, #logout a:hover{
+    font-weight: bold;
+}
+
+
+
+#options li{
+    margin: 10px;
+    padding: 10px;
+}
+
+#logout{
+    float: right;
+    margin-right: 25px;
+    margin-top: -50px;
+    
+}
+
+#logout nav{
+    float: right;
+}
+
+#logout ul{
+    list-style-type: none;
+}
+
+
+
+
+
+
+footer{
+    color: #ffffff;
+    background-color: #211E22;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+

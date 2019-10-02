@@ -1,0 +1,36 @@
+<!--<form action='' method=post>
+	 <select name=time1>
+	 <?php
+	 for ($i=0;$i<24;$i++)
+		echo "<option value=$i>$i:00</option>";
+	 ?>
+	 </select>
+	 
+	 <input type=submit class='btn btn-primary' value='Εξομοίωση'>
+	 <?php
+	 echo"Μέγιστη ακτίνα(σε μέτρα):<input type=number name=aktina value='0'>
+	 <input type=submit class='btn btn-primary' value='Βρες μου parking!'>"
+	 ?>
+	</form>-->
+
+    while($r=mysqli_fetch_array($q)) {
+					if($r['center']!=""){
+						$centercoords = explode(",",$r['center']);
+						$curcenterlat = $centercoords[0];
+						$curcenterlong = $centercoords[1];
+						echo"var ky=40000/360;
+						var kx = Math.cos(Math.PI*x/180.0)*ky;
+						var dx = Math.abs(y - $curcenterlong)*kx;
+						var dy = Math.abs(x - $curcenterlat)*ky;
+						var distance = Math.sqrt(dx*dx + dy*dy);
+						";
+						if(distance < $rad) {
+							echo"var marker = new google.maps.Marker({
+								position: {lat:$curcenterlat , lng:$curcenterlong },
+								map: map,
+								title: 'Επιθυμία χρήστη'
+							  });";
+						}
+					
+					}
+				}
